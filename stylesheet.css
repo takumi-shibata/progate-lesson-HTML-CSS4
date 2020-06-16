@@ -30,9 +30,13 @@ li {
 /* .flex-list(親要素)に対して、リストが横並びになるようdisplay:flex;の指定 */
 .flex-list {
   display: flex;
+  /* flex-listクラスに対して、折り返す指定 */
+  flex-wrap: wrap;
 }
 
 /* flex-listクラスの<li>タグに対して、画面幅いっぱいになるようflex:auto;の指定 */
 .flex-list li {
   flex: auto;
+  /* widthの指定 */
+  width: 50%;
 }
