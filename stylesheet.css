@@ -36,3 +36,31 @@ li {
 .flex-list li {
   flex: auto;
 }
+
+/* タブレット向けレイアウト */
+/* ブレイクポイントが1000px以下の時のメディアクエリの設定 */
+@media (max-width: 1000px) {
+  /* flex-listクラスに対して、折り返す指定 */
+  .flex-list {
+    flex-wrap: wrap;
+  }
+  
+  /* widthの指定 */
+  .flex-list li {
+    width: 50%;
+  }  
+}
+
+/* スマホ向けレイアウト */
+/* ブレイクポイントが670px以下の時のメディアクエリの設定 */
+@media (max-width: 670px) {
+  /* flex-listクラスに対して、縦1列にする指定 */
+  .flex-list {
+    flex-direction: column;
+  }
+  
+  /* 中央寄せの指定(widthはブレイクポイントで指定したものが適用されるためmarginのみで大丈夫) */
+  .flex-list li {
+    margin: 0 auto;
+  }  
+}
